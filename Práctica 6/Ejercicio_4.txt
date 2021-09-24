@@ -1,0 +1,3 @@
+|value_1|
+value_1 := (Integer primesUpTo: 20).
+Transcript show: value_1 asString; cr.

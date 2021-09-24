@@ -1,0 +1,7 @@
+|valuee|
+valuee:= UIManager default request: 'Ingrese el anyo'.
+valuee:= valuee asNumber.
+((valuee isDivisibleBy: 400) | (valuee isDivisibleBy: 4) & (valuee isDivisibleBy: 100)
+not )
+ifTrue: [ Transcript show: valuee asString, ' Es bisiesto'. ]
+ifFalse: [ Transcript show: valuee asString, ' No es bisiesto'.] 
