@@ -1,0 +1,4 @@
+|x|
+x:=(UIManager default request:'Type a number: ')asInteger .											
+((x\\2)=0)ifTrue:[UIManager inform:'Par']
+			ifFalse:[UIManager inform:'Inpar'].

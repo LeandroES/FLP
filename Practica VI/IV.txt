@@ -1,0 +1,3 @@
+|x|
+x := (Integer primesUpTo: 21).
+Transcript show: x asString; cr.

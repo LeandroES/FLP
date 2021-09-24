@@ -1,0 +1,4 @@
+|y|
+y:=(UIManager default request:'Type a year in 4 numbers format: ')asInteger .											
+(y%4=0) ifTrue:[UIManager inform:'Bisiesto']
+	ifFalse:[UIManager inform:'No Bisiesto'].

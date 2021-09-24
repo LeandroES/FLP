@@ -1,0 +1,15 @@
+| s a b x y h nums|
+
+a:=(UIManager default request:'Type first number: ')asInteger .
+b:=(UIManager default request:'Type second number: ')asInteger . 
+
+
+(a > b) ifTrue: [ x := b + 1. y := a - 1. s := 0. nums:=Array newFrom: (x to: y). h:= nums size + 1.
+		nums do: [ :ag | s := s + ag. ].
+		nums do: [ :each | Transcript show:  each. (each ~~ h) ifTrue:[ Transcript show: ', ' ].].
+		Transcript show: '']
+
+ifFalse: [ x := a + 1. y := b - 1. s := 0. nums:=Array newFrom: (x to: y). h:= nums size + 1.
+		nums do: [ :ag | s := s + ag. ].
+		nums do: [ :each | Transcript show:  each. (each ~~ h) ifTrue:[ Transcript show: ', ' ].].
+		Transcript show: ''].
