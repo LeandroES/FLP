@@ -1,8 +1,0 @@
-|value_1 value_2|
-value_1:= UIManager default request: 'enter first value'.
-value_1:= value_1 asNumber.
-value_2:= UIManager default request: 'enter second value'.
-value_2:= value_2 asNumber.
-
-value_1 to: value_2 do: [ :i |
-	Transcript show: i asString; cr.]

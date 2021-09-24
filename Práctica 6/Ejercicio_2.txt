@@ -1,8 +1,0 @@
-|value_1|
-value_1 := UIManager default request: 'Ingrese un numero'.
-value_1 := value_1 asNumber.
-value_1 even
-ifTrue: [
-Transcript show: value_1; show:' El numero es par';cr .]
-ifFalse: [
-Transcript show: value_1; show:' El numero es impar';cr.]
