@@ -1,0 +1,15 @@
+methodE3: n
+|x a|
+a:=n.
+[a >= 1]whileTrue:[ 
+    x:= a.
+    Transcript show: a; show: ': '.
+    [a ~= 1] whileTrue: [
+        (a\\2 == 0)
+            ifTrue:[ a := a/2]
+            ifFalse:[ a := (a * 3) + 1.].
+            Transcript show: '*'.
+    ].
+    Transcript show: '*';cr.
+    a:= a - 1.
+]. 

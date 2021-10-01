@@ -1,0 +1,14 @@
+methodE2: n
+|a|
+a:=n.
+[ a>1 ] whileTrue: [ 
+	Transcript show: ((a) asString) , ' '.
+	(a\\2~=0)
+	ifTrue: [ 
+		a:=(a*3)+1.
+	]
+	ifFalse: [ 
+		a:=a/2.  
+	]. 
+].
+Transcript show: ((1) asString).
