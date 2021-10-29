@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            function OptimusPrime(n){
+                c = 0 ;
+                console.log("Is this number", n, "susususuPrime?");
+                for(var i = 1; i <= n; i++){
+
+                    if(n%i == 0){
+
+                        c = c + 1 ;
+                    
+                    }
+
+                }
+                if (c == 2){
+
+                    return true;
+                
+                }
+                return false;
+            }
+            console.log(OptimusPrime(11));
+
+        </script>
+    </body>
+    <footer>
+        <p>Created by Leandro Estrada. © 2021</p>
+    </footer>
+</html>

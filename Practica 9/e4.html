@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            function factIter(n){
+                s = 1;
+                for(var i = 1; i <= n; i++){
+
+                    s = s * i;
+
+                }
+                return s;
+            }
+            console.log("------------------------------------\n");
+            console.log("Iterative Way: \n");
+            console.log(factIter(66));
+            console.log("------------------------------------\n");
+            console.log("Recursive Way: ");
+            console.log("------------------------------------\n");
+            function fectRecur(n){
+                if(n == 0){
+
+                    return 1;
+                
+                }else{
+
+                    return n * fectRecur(n - 1);
+                
+                }
+            }
+            console.log(fectRecur(66));
+
+        </script>
+    </body>
+</html>
