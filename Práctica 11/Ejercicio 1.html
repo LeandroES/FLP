@@ -1,0 +1,34 @@
+<html>
+<body>
+<script>
+
+let tasks = [
+    {
+        name : 'Buy milk from the shop ',
+        duration : 20 ,
+        priority : 1
+    },
+    {
+    name : 'Clean the house ',
+    duration : 120 ,
+    priority : 3
+    },
+    {
+    name : 'Study JS functions ',
+    duration : 180 ,
+    priority : 1
+    }
+    ];
+
+document.write("Iterativo","<br>");
+let names=[];
+    for(let i=0; i<3;i++){
+        names.push(tasks[i].name);
+    }
+document.write(names,"<br>");
+document.write("Funcional","<br>");
+let names2 = tasks.map(word => word.name) ;
+document.write(names2) ;
+</script>
+</body>
+</html>

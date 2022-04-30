@@ -1,0 +1,60 @@
+<html>
+<body>
+<script>
+var personnel = [
+    {
+    id: 5 ,
+    name : " Luke Skywalker ",
+    pilotingScore : 98 ,
+    shootingScore : 56 ,
+    isForceUser : true ,
+    },
+    {
+    id: 82 ,
+    name : " Sabine Wren ",
+    pilotingScore : 73 ,
+    shootingScore : 99 ,
+    isForceUser : false ,
+    },
+    {
+    id: 22 ,
+    name : "Zeb Orellios ",
+    pilotingScore : 20 ,
+    shootingScore : 59 ,
+    isForceUser : false ,
+    },
+    {
+    id: 15 ,
+    name : " Ezra Bridger ",
+    pilotingScore : 43 ,
+    shootingScore : 67 ,
+    isForceUser : true ,
+    },
+    {
+    id: 11 ,
+    name : " Caleb Dume ",
+    pilotingScore : 71 ,
+    shootingScore : 85 ,
+    isForceUser : true ,
+    }
+];
+document.write("Iterativo","<br>");
+let names=[];
+let total=0;
+let total2=0;
+for(let i=0; i<5;i++){
+    if(personnel[i].isForceUser===true){
+        //names.push(personnel[i].price);
+        total=personnel[i].pilotingScore+personnel[i].shootingScore;
+        total2=total2+total;
+    }
+}
+document.write(total2,"<br>");
+document.write("Funcional","<br>");
+let names2= personnel.map(word => {if(word.isForceUser===true) return word.pilotingScore+word.shootingScore;else return null;});
+let names3= names2.filter(x => x !== null);
+const reducer = ( accumulator , currentValue ) => accumulator + currentValue ;
+document.write(names3.reduce(reducer)) ;
+</script>
+</body>
+</html>
